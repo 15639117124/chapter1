@@ -30,6 +30,7 @@ public class CustomerServlet extends HelloServlet {
         List<Customer> customerList = customerService.getCustomerList();
         req.setAttribute("customerList",customerList);
         req.getRequestDispatcher("/WEB-INF/view/customer.jsp").forward(req,resp);
+        System.out.println("111");
     }
 
     @Override
